@@ -24,30 +24,91 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-transition="fade-in">Slide 1
-                     <img src="/home/tadas/Downloads/bokeh_plot(8).png" alt="Smiley face">
-                
+				<section>
+					<h1>ToFEWSI</h1>
+					<h3>Fire and climate data</h3>
+					<p>
+                    <small> <a href="#">Tadas Nikonovas </a> October 2018, <a href="#">Yogyakarta</a></small>
+					</p>
+	
                 </section>
-                <section data-transition="fade-in" data-transition-speed="fast">
-                    Slide 2
-                     <img src="/home/tadas/Downloads/bokeh_plot(8).png" alt="Smiley face">
+                <section>
+                    <h2>WP1: Develop seasonal fire occurrence forecasts...</h2>
+					<p>In order to fulfill WP1 (and others) we need to 
+                        crunch large fire and climate datasets</p>
+                </section>
+                <section>
+                    <h2>Fire occurrence observations</h2>
+						<p class="fragment">
+                        Geostationary - Polarorbiting - Aerial - Ground Surveys </p>
+                </section>
+                <section>
+                    <h2>MODIS fire products</h2>
+						<p class="fragment">
+                        Burned area (MCD64A1) - Active fires (M*D14)</p>
+                </section>
+	
+				<section data-transition="fade-in">MCD64A1 Burned area 2002 - 2015
+                     <img src="figs/ba_all.png" alt="MCD64A1">
+                </section>
+				<section data-transition="fade-in">MODIS Active fire 2002 - 2015
+                     <img src="figs/frp_all.png" alt="MCD64A1">
+                </section>
+				<section data-transition="fade-in">MCD64A1 - Active fire 2002 - 2015
+                     <img src="figs/frp-ba_all.png" alt="MCD64A1">
+                </section>
+                <section>
+                    <h2>Peat fire observations - challenging</h2>
+                    <p>Alternative datasets?</p>
+                </section>
+                <section data-transition="fade-in"> Mean MOPITT CO column 2008 - 2015
+                     <img src="figs/mean_mopitt.png" alt="MOPIT">
+                </section>
+ 				<section data-transition="fade-in">Mean MOPITT CO column Sep - Oct 2015
+                     <img src="figs/mean_mopitt_2015_oct.png" alt="MOPIT">
+                </section>
+                <section>
+                    <h2>Other alternatives?</h2>
+                </section>
+                <section>
+                    <h2>Climate datasets - ECMWF</h2>
+						<p>
+                         ERA5 - SEAS5</p>
+                </section>
+                 <section>
+                    <h3>Both ERA5 and SAES5 are currently state of art</h3>
+						<p class="fragment">
+                        30 km spatial and 1 to 6 hour temporal resolution. 
+                        Large number of parameters at surface and up to
+                        137 vertical levels.
+                         </p>
+                </section>
 
-</section>
-                <section data-transition="slide">
-        The train goes on …
-        </section>
-<section data-transition="slide">
-    and on …
-</section>
-<section data-transition="slide-in fade-out">
-    and stops.
-</section>
-<section data-transition="fade-in slide-out">
-    (Passengers entering and leaving)
-</section>
-<section data-transition="slide">
-    And it starts again.
-</section>
+ 
+
+				<section data-transition="fade-in">ERA5 based mean FWI 2008 - 2015
+                     <img src="figs/mean_fwi.png" alt="MCD64A1">
+                </section>
+				<section data-transition="fade-in">ERA5 based mean FWI 2015 Sep - Oct
+                     <img src="figs/mean_fwi_2015_oct.png" alt="MCD64A1">
+                </section>
+
+				<section data-transition="fade-in">FWI vs MCD64A1
+                     <img src="figs/FWI_MCD64A1_BA_indonesia.png" alt="MCD64A1">
+                </section>
+                <section data-transition="fade-in">FWI vs MODIS active fires
+                     <img src="figs/FWI_MODIS_FRP_indonesia.png" alt="MCD64A1">
+                </section>
+                <section>
+                    <h2>Data sharing infrastructure</h2>
+						<p>
+                        Server - Cloud - Email
+                        </p>
+                </section>
+	
+                <section data-transition="fade-in">Thank you
+                </section>
+
 
 			</div>
 		</div>
