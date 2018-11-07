@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+    .container{
+        display: flex;
+    }
+    .col{
+        flex: 1;
+    }
+    </style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h2> <span class="fragment highlight-red">Models</span> in physical geography</h2>
+					<p>GEG266 - Approaches to physical geography</p>
+					<p>
+                    <small> <a href="#">Tadas Nikonovas</a>, November 2018, <a href="#">tadas.nikonovas@swansea.ac.uk</a></small>
+					</p>
+	
+                </section>
+                <section>
+                    <h3>models in physical geography</h3>
+					<ul>
+						<li>What is a model?</li>
+						<li>The development of model</li>
+						<li>Different types of models</li>
+						<li>Modelling uncertainties</li>
+						<li>Uses and limitations</li>
+					</ul>
+                </section>
+            <section>
+                    <h2>what is a model?</h2>
+                    <p>
+                     <img src="figs_mod/solar.png" width="50%" alt="solar_model">
+                     </p>
+                </section>
+
+            <section>
+                    <h2>What is a model</h2>
+                     <img src="figs_mod/analogue_model.png" alt="glacier_mod.png">
+                </section>
+ 
+              <section>
+                <h2>a model is a <font color="#ff2c2d"> small-scale </font> simplified version of <font color="#ff2c2d"> reality </font></h2>
+                </section>
+
+            <section>
+                    <h2>what is a model?</h2>
+    <iframe class="stretch" data-src="https://windy.com"></iframe>
+                </section>
+ 
+            <section>
+              <h2>
+                A set of <font color="#ff2c2d">equations </font> expressing the laws that govern the evolution of the <font color="#ff2c2d">system</font>
+            </h2>
+                </section>
+
+            <section>
+                    <h3>Why use a model?</h3>
+					<ul>
+						<li>To understand system behaviour</li>
+						<li>Prediction</li>
+						<li>Sensitivity analysis</li>
+					</ul>
+                </section>
+
+            <section>
+                    <h2>Types of model</h2>
+                    <p> Conceptual - <font color="#ff2c2d">Empirical - Physical</font></p>
+                </section>
+
+            <section>
+                    <h2>Conceptual model</h2>
+                    <p>An outline of how system works</p>
+                </section>
+
+
+            <section>
+                    <h3>conceptual model</h3>
+                     <img class="stretch" src="figs_mod/simple_conc_mod.png" alt="concept_mod.png">
+                </section>
+
+            <section>
+                    <h3>conceptual model</h2>
+                     <img src="figs_mod/glacier_concept_r.png" alt="glacier_mod.png">
+                </section>
+
+            <section>
+                    <h3>conceptual model</h333>
+                     <img src="figs_mod/complex_conc_mod_r.png" height="80%" alt="concept_mod.png">
+                </section>
+
+                  <section data-transition="fade-in">
+                    <h2>Empirical model</h2>
+                    <p>Model based on <font color="#ff2c2d">observations or experiments </font></p>
+                </section>
+
+                  <section data-transition="fade-in">
+                    <h3>Empirical model</h3>
+                     <img src="figs_mod/glacier_empirical_r.png" alt="glacier_mod.png">
+                </section>
+
+
+                  <section data-transition="fade-in">
+                    <h3>Empirical model</h3>
+                     <img src="figs_mod/hydro_empirical.png" alt="glacier_mod.png">
+                </section>
+
+                  <section data-transition="fade-in">
+                    <h3>Physical model</h3>
+                    <p>Physical model - more theoretical, sound knowledge of the underlaying concepts is required</p>
+                    </section>
+
+
+                  <section data-transition="fade-in">
+                    <h3>Physical model</h3>
+                    <p>Based on first principles - storage, transfer, mass conservation...</p>
+                    </section>
+
+                 <section data-transition="fade-in">
+                    <h3>Physical model</h3>
+                    <p>
+                      Uses equations believed to represent the physical/chemical/biological process governing the system</p>
+                 </section>
+               <section>
+                    <h3>Physical model examples</h3>
+					<ul>
+						<li>Ice sheet modelling</li>
+						<li>Ocean circulation</li>
+						<li>Weather prediction</li>
+						<li>Climate modelling</li>
+						<li>Pollution transport</li>
+					</ul>
+                </section>
+  
+
+               <section>
+                    <h3>Empirical vs Physical</h3>
+
+<div class="container">
+
+<div class="col">
+  <font size=6>
+				<ul>
+						<li>Based on observations</li>
+						<li>Statistical, "black box"</li>
+						<li>Works on anything, but often humans, biology, bomplex stuff</li>
+            <li>Easy to tweak</li>
+          </ul>
+
+</div>
+
+<div class="col">
+				<ul>
+						<li>Based on first principles</li>
+						<li>Unambiguous</li>
+						<li>Physics, chemistry...</li>
+            <li>Either works or it doesn't</li>
+          </ul>
+</div>
+</div>
+</font>
+</section>
+
+	                 <section data-transition="fade-in">
+                    <h2>The modelling process</h2>
+                    <p> <font color="#ff2c2d">problem - conceptual model - mathematical model - computer code - application</font></p>
+                </section>
+
+ 	                 <section data-transition="fade-in">
+                    <h2>Numerical modelling</h2>
+                </section>
+
+   	            <section data-transition="fade-in">
+                  <p> Lewis F. Richardson "Grand forecast factory"</p>
+                     <img src="figs_mod/richardson.png" alt="glacier_mod.png">
+                </section>
+
+   	            <section data-transition="fade-in">
+                    <h3>21st century</h3>
+                     <img src="figs_mod/archer_ss_r.png" alt="glacier_mod.png">
+                </section>
+
+                 <section>
+                    <h3>How models are implemented?</h3>
+                  <p>A computer program is just a list of instructions</p>
+                  <pre><code class="python" data-trim contenteditable style="font-size: 18px;">
+     heat_absorbed = (1 - albedo) * solar_radiation
+     temperature += heat_absorbed
+     if temperature > 0:
+         do_rainfal()
+     else:
+         do_snowfall()
+                </code></pre>
+                </section>
+
+	            <section data-transition="fade-in">
+                    <h3>grids and timesteps</h3>
+                     <img src="figs_mod/swansea_bay.png" alt="glacier_mod.png">
+                </section>
+ 	            <section data-transition="fade-in">
+                    <h3>grids and timesteps</h3>
+                     <img src="figs_mod/swansea_bay_grid_big_r.png" alt="glacier_mod.png">
+                </section>
+  	            <section data-transition="fade-in">
+                    <h3>grids and timesteps</h3>
+                     <img src="figs_mod/swansea_bay_grid_big_exchange_r.png" alt="glacier_mod.png">
+                </section>
+  	            <section data-transition="fade-in">
+                    <h3>grids and timesteps</h3>
+                     <img src="figs_mod/swansea_bay_grid_big_small_r.png" alt="glacier_mod.png">
+                </section>
+                 </section>
+  	            <section data-transition="fade-in">
+                    <h4>Lewis Fry Richardson Grand forecast factory</h4>
+                     <img src="figs_mod/richardson.png" alt="glacier_mod.png">
+                </section>
+   	            <section data-transition="fade-in">
+                    <h2>Archer supercomputer</h2>
+                     <img src="figs_mod/archer_ss_r.png" alt="glacier_mod.png">
+                </section>
+
+
+             <section>
+               <h3>scientific models at best are <font color="#ff2c2d"> approximations </font>of the objects and systems that they represent—they are not exact replicas</h3>
+                </section>
+
+	            <section data-transition="fade-in">
+                    <h2>grids and timesteps</h2>
+                     <img src="figs_mod/swansea_bay.png" alt="glacier_mod.png">
+                </section>
+ 	            <section data-transition="fade-in">
+                    <h2>grids and timesteps</h2>
+                     <img src="figs_mod/swansea_bay_grid_big_r.png" alt="glacier_mod.png">
+                </section>
+  	            <section data-transition="fade-in">
+                    <h2>grids and timesteps</h2>
+                     <img src="figs_mod/swansea_bay_grid_big_exchange_r.png" alt="glacier_mod.png">
+                </section>
+  	            <section data-transition="fade-in">
+                    <h2>grids and timesteps</h2>
+                     <img src="figs_mod/swansea_bay_grid_big_small_r.png" alt="glacier_mod.png">
+                </section>
+                 </section>
+  	            <section data-transition="fade-in">
+                    <h4>Lewis Fry Richardson Grand forecast factory</h4>
+                     <img src="figs_mod/richardson.png" alt="glacier_mod.png">
+                </section>
+   	            <section data-transition="fade-in">
+                    <h2>Archer supercomputer</h2>
+                     <img src="figs_mod/archer_ss_r.png" alt="glacier_mod.png">
+                </section>
+    	            <section data-transition="fade-in">
+                    <h2>Improvements in climate model resolution</h2>
+                     <img src="figs_mod/hadley_res.png" alt="glacier_mod.png">
+                </section>
+     	            <section data-transition="fade-in">
+                    <h2>Types of model</h2>
+                    <p>Conceptual glacier model - an outline of how system works</p>
+                     <img src="figs_mod/glacier_concept_r.png" alt="glacier_mod.png">
+                </section>
+
+
+
+				<section data-transition="fade-in">MCD64A1 Burned area 2002 - 2015
+                     <img src="figs/ba_all.png" alt="MCD64A1">
+                </section>
+				<section data-transition="fade-in">MODIS Active fire 2002 - 2015
+                     <img src="figs/frp_all.png" alt="MCD64A1">
+                </section>
+				<section data-transition="fade-in">MCD64A1 - Active fire 2002 - 2015
+                     <img src="figs/frp-ba_all.png" alt="MCD64A1">
+                </section>
+                <section>
+                    <h2>Peat fire observations - challenging</h2>
+                    <p>Alternative datasets?</p>
+                </section>
+                <section data-transition="fade-in"> Mean MOPITT CO column 2008 - 2015
+                     <img src="figs/mean_mopitt.png" alt="MOPIT">
+                </section>
+ 				<section data-transition="fade-in">Mean MOPITT CO column Sep - Oct 2015
+                     <img src="figs/mean_mopitt_2015_oct.png" alt="MOPIT">
+                </section>
+                <section>
+                    <h2>Other alternatives?</h2>
+                </section>
+                <section>
+                    <h2>Climate datasets - ECMWF</h2>
+						<p>
+                         ERA5 - SEAS5</p>
+                </section>
+                 <section>
+                    <h3>Both ERA5 and SAES5 are currently state of art</h3>
+						<p class="fragment">
+                        30 km spatial and 1 to 6 hour temporal resolution. 
+                        Large number of parameters at surface and up to
+                        137 vertical levels.
+                         </p>
+                </section>
+
+ 
+
+				<section data-transition="fade-in">ERA5 based mean FWI 2008 - 2015
+                     <img src="figs/mean_fwi.png" alt="MCD64A1">
+                </section>
+				<section data-transition="fade-in">ERA5 based mean FWI 2015 Sep - Oct
+                     <img src="figs/mean_fwi_2015_oct.png" alt="MCD64A1">
+                </section>
+
+				<section data-transition="fade-in">FWI vs MCD64A1
+                     <img src="figs/FWI_MCD64A1_BA_indonesia.png" alt="MCD64A1">
+                </section>
+                <section data-transition="fade-in">FWI vs MODIS active fires
+                     <img src="figs/FWI_MODIS_FRP_indonesia.png" alt="MCD64A1">
+                </section>
+                <section>
+                    <h2>Data sharing infrastructure</h2>
+						<p>
+                        Server - Cloud - Email
+                        </p>
+                </section>
+	
+                <section data-transition="fade-in">Thank you
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
